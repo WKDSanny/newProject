@@ -1,64 +1,72 @@
 <!DOCTYPE html>
-
+<!----head contains the "meta codes to ensure page is suitable for all device and sizes. Also conatins the external style sheet, title, nav and header"-->
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sanny's Portfolio</title>
-  <nav class="nav">
-    <ul>
-      <li class="aboutMe">About Me</li>
-      <li class="myProject">My Project</li>
-      <li class="skills">Skills</li>
-      <li class="contact">Contact</li>
-    </ul>
-  </nav>
-  <header>Sanny's Portfolio</header>
   <link rel="stylesheet" href="./styles.css" />
+  <title>Sanny's Portfolio</title>
 </head>
-
+<!----body contains the profile image, title of section and breif description about me"-->
 <body>
-  <div class="mainBody">
-    <img
-      id="portfolioImage"
-      width="250"
-      height="400"
-      src="example.jpg"
-      alt="Portfolio Image"
-      ;
-    />
-  </div>
-  <div>
-    <h1>About Me</h1>
-  </div>
-  <div id="aboutMeDescription">
-    <p>
-      "I have always been perceived as an ambitious individual with a lot of
-      drive and determination to succeed. Being enthusiastic and self-motivated
-      person, I am always attentive and eager to complete any task given to me
-      which is why I always enjoy a new challenge. Having excellent time
-      management and organisational skills are a few of my many attributes. I
-      consider my interpersonal skills to be of at a very high standard and can
-      easily communicate at all levels. I am always eager to learn new skills,
-      gain experience and take every opportunity that come to my way."
-    </p>
-  </div>
+  <div class="pageContainer">
+    <div class="header">
+      <header>Sanny's Portfolio</header>
+      <nav>
+        <div class="navBar">
+          <p>About Me</p>
+          <p>My Project</p>
+          <p>Skills</p>
+          <p>Contact</p>
+        </div>
+      </nav>
+    </div>
+    <div class="pageContent">
+      <div class="aboutMeContainer">
+        <div class="aboutMeImage">
+          <img
+            width="250"
+            height="400"
+            src="example.jpg"
+            alt="Portfolio Image"
+          />
+        </div>
+        <div class="aboutMeText">
+          <h1>About Me</h1>
+          <p>
+            "I have always been perceived as an ambitious individual with a lot
+            of drive and determination to succeed. Being enthusiastic and
+            self-motivated person, I am always attentive and eager to complete
+            any task given to me which is why I always enjoy a new challenge.
+            Having excellent time management and organisational skills are a few
+            of my many attributes. I consider my interpersonal skills to be of
+            at a very high standard and can easily communicate at all levels. I
+            am always eager to learn new skills, gain experience and take every
+            opportunity that come to my way."
+          </p>
+        </div>
+      </div>
+      <!----listing of "my projects and skills"-->
+      <h2>My Projects</h2>
+      <ul>
+        <li>Project1</li>
+        <li>Project2</li>
+        <li>Project3</li>
+      </ul>
 
-  <h2>My Projects</h2>
-  <ul>
-    <li>Project1</li>
-    <li>Project2</li>
-    <li>Project3</li>
-  </ul>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>Skill1</li>
-    <li>Skill2</li>
-    <li>Skill3</li>
-  </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>Fullstack Engineer</li>
+        <li>JQuery</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>C#</li>
+      </ul>
+    </div>
+  </div>
 </body>
-
+<!----footer containing contact details-->
 <footer>
   <h3>Contact</h3>
   <ul>
